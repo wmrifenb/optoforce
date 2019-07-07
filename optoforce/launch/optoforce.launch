@@ -32,7 +32,7 @@
   will get the consecutive numbers -->
   <arg name="starting_index" default="0"/>
   <!-- Direction of scaling file -->
-  <arg name="scaling_file" default="$(find optoforce)/config/multi_channel_3_axis_generic_scale.yaml"/>
+  <arg name="scaling_file" default="$(find optoforce)/config/single_channel_6_axis_generic_scale.yaml"/>
 
   <node name="$(anon optoforce)" pkg="optoforce" type="optoforce_node.py" output="screen">
     <param name="port" value="$(arg port)"/>
