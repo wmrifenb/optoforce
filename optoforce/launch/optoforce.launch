@@ -1,6 +1,6 @@
 <launch>
   <!-- Serial port for the optoforce sensor -->
-  <arg name="port" default="/dev/ttyACM0"/>
+  <arg name="port" default="/dev/serial/by-id/usb-OptoForce_OptoForce_DAQ-if00"/>
   <!-- Update speed. Available values:
         "Stop"
         "1000Hz"
@@ -27,7 +27,7 @@
         "m-ch/3-axis"
         "s-ch/6-axis"
         -->
-  <arg name="type" default="m-ch/3-axis"/>
+  <arg name="type" default="s-ch/6-axis"/>
   <!-- Numerical index of the first sensor. The rest (if this is a multi-channel DAC)
   will get the consecutive numbers -->
   <arg name="starting_index" default="0"/>
